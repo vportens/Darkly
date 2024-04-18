@@ -1,6 +1,6 @@
 ## XSS Injection on URL
 
-If we clic on nsa image, we can see the src in the url, and try to exploit it,
+If we click on nsa image, we can see the src in the url, and try to exploit it,
 Direct injection don't work so we use base64 to test a classique : 
 ```<script>alert('XSS')</script>```
 in base64 : ```PHNjcmlwdD5hbGVydCgnWFNTJyk8L3NjcmlwdD4=```

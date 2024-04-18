@@ -7,3 +7,9 @@ When we go to ```http://x.x.x.x/whatever``` we observe a page named htpasswd tha
 using MD5 to decrypte the code give us : ```qwerty123@```
 Now we can go to the ```http://x.x.x.x/admin``` page and try to log as  ```root```
 with ```qwerty123@``` as password.   
+
+## Patch
+
+Add complexity / pseudo-randomise your passwords
+Never hide sensitive information in robots.txt
+Salt MD5

